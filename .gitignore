@@ -1,0 +1,9 @@
+node_modules/
+.vscode/
+.DS_Store
+.idea/
+dist/
+/results
+/cypress/videos
+/log
+git 
