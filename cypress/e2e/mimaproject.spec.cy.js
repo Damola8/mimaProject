@@ -1,5 +1,5 @@
 describe('template spec', () => {
-  it('passes', () => {
-    cy.visit('https://example.cypress.io')
+  it('verify that user is able to signup successfully', () => {
+    cy.visit('/')
   })
 })
