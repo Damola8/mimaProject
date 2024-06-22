@@ -34,5 +34,5 @@ Cypress.Commands.add ('clickElement', (element)=>{
 // })
 
 Cypress.Commands.add ('typeText', (inputfield,inputText)=>{
-    cy.get(inputfield).should('exist').type(inputText)
+    cy.get(inputfield).should('exist').fill(inputText)
 })
