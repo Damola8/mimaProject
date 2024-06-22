@@ -17,14 +17,14 @@
   "websiteField": "#website",
   "igHandleField": "#instagramHandle",
   "twitterNameField": "#twitterHandle", 
-  "dropdown": "div[placeholder]",
-  "infoSourceField": "input#fullname",
+  "infoSourceField": "div[placeholder]",
+  "infoDropdown": ".MimaDropdown_select__options__xLi7K:nth-child(3)",
   "passwordField": "#password",
   "signUpButton": "button[type='submit']"
   },
 
   "otpPage":{
-    "thankyouPage" : "hz[class = 'Onboarding_left__h2__w+P+z']"
+    "thankyouPage" : "h2[class = 'Onboarding_left__h2__w+P+z']"
   }
 
 }

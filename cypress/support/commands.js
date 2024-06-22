@@ -29,6 +29,10 @@ Cypress.Commands.add ('clickElement', (element)=>{
     cy.get(element).should('exist').click()
 })
 
+// Cypress.Commands.add ('insertText', (field,text)=>{
+//     cy.get(field).should('exist').type(text)
+// })
+
 Cypress.Commands.add ('typeText', (inputfield,inputText)=>{
     cy.get(inputfield).should('exist').type(inputText)
 })
