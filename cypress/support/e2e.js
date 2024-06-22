@@ -16,13 +16,15 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 import './command/super_actions'
+import 'cypress-fill-command'
+import 'cypress-mailslurp'
 
 before(()=>{
-    cy.on('uncaught:exception', ()=>{
+    Cypress.on('uncaught:exception', ()=>{
         return false
     })
 
-    cy.visit('http://staging.trymima.com/')
+    cy.visit('/')
 })
 
 // Alternatively you can use CommonJS syntax:
