@@ -1,5 +1,8 @@
-describe('template spec', () => {
+describe('Sign Up Flows', () => {
   it('verify that user is able to signup successfully', () => {
-    cy.visit('/')
+    cy.clickHomePageSignupBtn()
+    cy.typeUserDetails()
+    cy.typeUserSocials()
+    cy.verifyOTPPage()
   })
 })

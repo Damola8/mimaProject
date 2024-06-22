@@ -1,16 +1,30 @@
 {
-  "signUpButton": ".Header2_header__nav__btn__wRKfY div:nth-child(2)",
-   "fullNameField": "#fullname",
-   "businessNameField": "#businessname",
-   "businessEmailNameField": "#businessemail",
-   "businessPhoneNo":"#businessphonenumber",
-   "businessRegNumberField": "#businessRegNum",
-   "websiteField": "#website",
-   "igHandleField": "#instagramHandle",
-   "twitterNameField": "#twitterHandle",
-   "dropdown": "div[placeholder]",
-   "infoSourceField": "input#fullname",
-   "nextButton":"",
-   "passwordField": "#password",
-   "signupButton": ""
+
+"homepageSignup": {
+  "homePageSignUpButton": ".Header2_header__nav__btn__wRKfY div:nth-child(2)"
+},
+
+"userDetails":{
+  "fullNameField": "#fullname",
+  "businessNameField": "#businessname",
+  "businessEmailField": "#businessemail",
+  "businessPhoneNo":"#businessphonenumber",
+  "businessRegNumberField": "#businessRegNum",
+  "nextButton":"button[type='button']"
+},
+
+"userSocials":{  
+  "websiteField": "#website",
+  "igHandleField": "#instagramHandle",
+  "twitterNameField": "#twitterHandle", 
+  "infoSourceField": "div[placeholder]",
+  "infoDropdown": ".MimaDropdown_select__options__xLi7K:nth-child(3)",
+  "passwordField": "#password",
+  "signUpButton": "button[type='submit']"
+  },
+
+  "otpPage":{
+    "thankyouPage" : "h2[class = 'Onboarding_left__h2__w+P+z']"
+  }
+
 }

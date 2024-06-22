@@ -15,7 +15,15 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import './command/super_actions'
 
+before(()=>{
+    cy.on('uncaught:exception', ()=>{
+        return false
+    })
+
+    cy.visit('http://staging.trymima.com/')
+})
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
