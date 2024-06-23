@@ -4,5 +4,6 @@ describe('Sign Up Flows', () => {
     cy.typeUserDetails()
     cy.typeUserSocials()
     cy.verifyOTPPage()
+    cy.enterOTP()
   })
 })
