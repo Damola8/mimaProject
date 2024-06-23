@@ -59,4 +59,19 @@ Cypress.Commands.add('enterEmail', ()=>{
 })
 
 
+Cypress.Commands.add('enterOTP',() =>{
+    cy.mailslurp().then(emailExtractor => emailExtractor.waitForLatestEmail(inboxId,30000, true)).then(email =>{
+        const emailBody = email.body
+        const documemtParser = new DOMParser()
+        const document = documemtParser.parseFromString(emailBody, "text/html")
+        const otpCode = document.querySelector('tr:nth-child(2) p:nth-child(3)').textContent
+        const otpValue = otpCode.trim()
+
+        cy.get('input').each(($el, index)=>{
+            cy.wrap($el).should('exist').fill(otpValue[index])
+        })
+        cy.log(otpValue)
+    })
+})
+
 
